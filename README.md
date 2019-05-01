@@ -6,6 +6,6 @@ Host: [https://us-central1-coba-23d3c.cloudfunctions.net/v1](https://us-central1
 |-----------------|---------------|-------------------|-------------------|
 | /todos          | `GET`         | Get All Todos     |                   |
 | /todos          | `POST`        | Create todos      | `{"content": ""}` |
-| /todos/:id      | `PUT`         | Edit Todos        | `{"content": ""}` |
-| /todos/:id/done | `PUT`         | Mark todo as done |                   |
-| /todos/:id      | `DELETE`      | Delete a todo     |                   |
+| /todos/?id=:id      | `PUT`         | Edit Todos        | `{"content": ""}` |
+| /todos/done?id=:id | `PUT`         | Mark todo as done |                   |
+| /todos/?id=:id      | `DELETE`      | Delete a todo     |                   |
